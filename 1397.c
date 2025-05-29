@@ -1,25 +1,32 @@
 #include<stdio.h>
 int main()
 {
-    int n, a, b;
+    while(1)
+    {
+        int t;
+        scanf("%d", &t);
 
-    do{
-    int p1=0, p2=0;
-    scanf("%d", &n);
-    while(n<0 || n>10){
-    scanf("%d", &n);
-    }
-    if(n==0){
-        return 0;
-    }
-    for(int i=0; i<n; i++){
-        scanf("%d %d", &a, &b);
+        if(t==0)
+        {
+            break;
+        }
 
-        if(a>b)
-            p1++;
-        else if(b>a)
-            p2++;
+        int x = 0, y =0;
+
+        for (int i = 0 ; i < t; i++)
+        {
+            int a, b;
+            scanf("%d %d", &a, &b);
+
+            if(a>b)
+            {
+                x++;
+            }
+            else if(b>a)
+            {
+                y++;
+            }
+        }
+        printf("%d %d\n", x, y);
     }
-    printf("%d %d\n", p1, p2);
-    } while (1);
 }

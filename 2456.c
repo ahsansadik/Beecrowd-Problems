@@ -1,18 +1,19 @@
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
+    int a, b, c, d, e;
+    scanf("%d %d %d %d %d", &a, &b, &c, &d, &e);
 
-   int A,B,C,D,E;
-   scanf("%d %d %d %d %d",&A,&B,&C,&D,&E);
-if ((A>=0 && A<=13) && (B>=0 && B<=13) && (C>=0 && C<=13) && (D>=0 && D<=13) && (E>=0 && E<=13))
-
-   if(A<B && B<C && C<D && D<E)
-        printf("C\n");
-
-   else if(A>B && B>C && C>D && D>E)
+    if(a>b && b>c && c>d && d>e)
+    {
         printf("D\n");
-   else
-       printf("N\n");
-
-return 0;
+    }
+    else if(a<b && b<c && c<d && d<e)
+    {
+        printf("C\n");
+    }
+    else
+    {
+        printf("N\n");
+    }
 }

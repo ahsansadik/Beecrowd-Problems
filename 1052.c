@@ -1,20 +1,56 @@
 #include<stdio.h>
 int main()
 {
-    int N;
-    scanf("%d", &N);
+    int x;
+    scanf("%d", &x);
 
-    if(N == 1)  printf("January\n");
-    else if (N == 2)  printf("February\n");
-    else if (N == 3)  printf("March\n");
-    else if (N == 4)  printf("April\n");
-    else if (N == 5)  printf("May\n");
-    else if (N == 6)  printf("June\n");
-    else if (N == 7)  printf("July\n");
-    else if (N == 8)  printf("August\n");
-    else if (N == 9)  printf("September\n");
-    else if (N == 10)  printf("October\n");
-    else if (N == 11)  printf("November\n");
-    else if (N == 12)  printf("December\n");
-    return 0;
+    if(x==4)
+    {
+        printf("April\n");
+    }
+    else if(x==1)
+    {
+        printf("January\n");
+    }
+    else if(x==2)
+    {
+        printf("February\n");
+    }
+    else if(x==3)
+    {
+        printf("March\n");
+    }
+    else if(x==5)
+    {
+        printf("May\n");
+    }
+    else if(x==6)
+    {
+        printf("June\n");
+    }
+    else if(x==7)
+    {
+        printf("July\n");
+    }
+    else if(x==8)
+    {
+        printf("August\n");
+    }
+    else if(x==9)
+    {
+        printf("September\n");
+    }
+    else if(x==10)
+    {
+        printf("October\n");
+    }
+    else if(x==11)
+    {
+        printf("November\n");
+    }
+    else if(x==12)
+    {
+        printf("December\n");
+    }
+
 }

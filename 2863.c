@@ -1,23 +1,18 @@
 #include<stdio.h>
-int main ()
+int main()
 {
-float x, lowest;
-int n;
-while(scanf("%d", &n) !=EOF)
-{
-    float arr[n];
-    for(int i=0; i<n; i++)
+    int t;
+    while(scanf("%d", &t)!=EOF)
     {
-        scanf("%f", &arr[i]);
-    }
-    lowest=arr[0];
-    for(int i=1; i<n; i++)
-    {
-        if(arr[i]<lowest)
+        float min = 100.00, x;
+        for(int i = 0 ; i < t; i++)
         {
-            lowest=arr[i];
+            scanf("%f", &x);
+            if(x<min)
+            {
+                min = x;
+            }
         }
+        printf("%.2f\n", min);
     }
-    printf("%.2f\n", lowest);
-}
 }

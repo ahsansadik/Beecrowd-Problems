@@ -1,16 +1,23 @@
 #include<stdio.h>
 int main()
 {
-    int X, Z, count, sum=0;
-    scanf("%d", &X);
-    scanf("%d", &Z);
-    while (Z<=X){
-        scanf("%d", &Z);
+    int x, y, count=0, sum=0;
+    scanf("%d %d", &x, &y);
+
+    while(x>y || x==y)
+    {
+        scanf("%d", &y);
     }
-    for(int i=X; sum<=Z; i++){
+
+    for(int i = x; ; i++)
+    {
         sum=sum+i;
         count++;
+        if(sum>y)
+        {
+            break;
+        }
     }
     printf("%d\n", count);
-    return 0;
+
 }

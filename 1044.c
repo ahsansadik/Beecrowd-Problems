@@ -1,22 +1,22 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,max,min;
-    scanf("%d %d", &a,&b);
+    int x, y;
+    scanf("%d %d", &x, &y);
 
-    if(a>b){
-        max=a;
-        min=b;
-    }
-    else if(b>a){
-        max=b;
-        min=a;
+    if(y<x)
+    {
+        int temp = y;
+        y = x;
+        x = temp;
     }
 
-    if((max%min)==0)
+    if(y%x==0)
+    {
         printf("Sao Multiplos\n");
+    }
     else
+    {
         printf("Nao sao Multiplos\n");
-
-    return 0;
+    }
 }

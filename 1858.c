@@ -1,25 +1,19 @@
 #include<stdio.h>
 int main()
 {
-    int n, position=1, i, j;
+    int min = 999999999, n, pos;
     scanf("%d", &n);
 
     int arr[n];
 
-    for (i=0; i<n; i++){
-        scanf("%d", &arr[i]);
-    }
-
-    int lowest=arr[0];
-
-    for (j=0; j<n; j++)
+    for(int i = 1; i <= n; i++)
     {
-        if(arr[j]<lowest)
+        scanf("%d", &arr[i]);
+        if(arr[i]<min)
         {
-        lowest=arr[j];
-        position=j+1;
+            min=arr[i];
+            pos=i;
         }
     }
-    printf("%d\n", position);
-return 0;
+    printf("%d\n", pos);
 }

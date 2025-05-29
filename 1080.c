@@ -1,18 +1,17 @@
 #include<stdio.h>
 int main()
 {
-    int j = 0, p, arr[100];
-    for (int i = 0;i < 100;i++){
-        scanf("%d", &arr[i]);
-    }
-    for(int i = 0;i < 100;i++){
-            if(arr[i] > j){
-                j = arr[i];
-                p = i+1;
-            }
-    }
-    printf("%d\n", j);
-    printf("%d\n", p);
+    int max = 0, n, pos;
 
-    return 0;
+    for(int i = 1; i <= 10; i++)
+    {
+        scanf("%d", &n);
+        if(n>max)
+        {
+            max=n;
+            pos=i;
+        }
+    }
+    printf("%d\n", max);
+    printf("%d\n", pos);
 }

@@ -1,25 +1,22 @@
-#include <stdio.h>
-
+#include<stdio.h>
 int main()
 {
-        int n, i;
-        float x, y;
-
-        scanf("%d", &n);
-
-        for(i = 0; i < n; ++i)
+    int t;
+    scanf("%d", &t);
+    while(t)
+    {
+        int x, y;
+        scanf("%d %d", &x, &y);
+        if(y==0)
         {
-            scanf("%f %f", &x, &y);
-
-            if(y == 0)
-			{
-                printf("divisao impossivel\n");
-            }
-            else
-			{
-                printf("%.1f\n", (x/y) );
-            }
+            printf("divisao impossivel\n");
+        }
+        else
+        {
+            printf("%.1f\n", (float)x/y);
         }
 
-        return 0;
+
+        t--;
+    }
 }
