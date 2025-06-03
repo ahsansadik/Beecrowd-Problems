@@ -1,30 +1,26 @@
 #include<stdio.h>
 int main()
 {
-    int n, c4=0, c2=0, c3=0, c5=0;
+    int n;
     scanf("%d", &n);
-    if (n<1 || n>1000){
-    return 0;
-    }
 
     int arr[n];
 
-    for(int i=0; i<n; i++){
-    scanf("%d", &arr[i]);
-    if (arr[i]%4==0)
-    c4++;
-    if (arr[i]%2==0)
-    c2++;
-    if (arr[i]%3==0)
-    c3++;
-    if (arr[i]%5==0)
-    c5++;
+    for(int i = 0; i < n ; i++)
+    {
+        scanf("%d", &arr[i]);
     }
 
-    printf("%d Multiplo(s) de 2\n", c2);
-    printf("%d Multiplo(s) de 3\n", c3);
-    printf("%d Multiplo(s) de 4\n", c4);
-    printf("%d Multiplo(s) de 5\n", c5);
-
-    return 0;
+    for(int i = 2 ; i < 6 ; i++)
+    {
+        int count = 0;
+        for(int j = 0 ; j < n ; j++)
+        {
+            if(arr[j]%i==0)
+            {
+                count++;
+            }
+        }
+        printf("%d Multiplo(s) de %d\n", count, i);
+    }
 }
