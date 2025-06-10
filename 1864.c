@@ -1,14 +1,19 @@
 #include <stdio.h>
-int main()
-{
-    int n;
-    char ara[40]="LIFE IS NOT A PROBLEM TO BE SOLVED";
-    scanf("%d", &n);
+#include <string.h>
 
-    for(int i=0; i<n; i++)
-    {
-        printf("%c", ara[i]);
-    }
-    printf("\n");
-    return 0;
+int main ()
+{
+
+  char frase[] = "LIFE IS NOT A PROBLEM TO BE SOLVED";
+  unsigned short int n;
+
+  scanf("%hd", &n);
+
+  for (unsigned short i = 0; i < n; i++)
+  {
+
+    printf("%c", frase[i]);
+
+  }
+  printf("\n");
 }
